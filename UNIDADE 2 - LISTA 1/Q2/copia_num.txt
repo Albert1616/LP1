@@ -1,0 +1,3 @@
+Maior: 345
+Menor: 1
+Média: 42

@@ -1,0 +1,8 @@
+Matheus 7.50 Aprovado
+Albert 5.17 Reprovado
+Rayssa 9.83 Aprovado
+Leticia 6.43 Reprovado
+Eduarda 8.83 Aprovado
+Paulo 9.23 Aprovado
+Pedro 8.63 Aprovado
+Ricardo 6.93 Reprovado

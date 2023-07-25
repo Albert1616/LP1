@@ -1,0 +1,224 @@
+\hypertarget{class_departamento}{}\doxysection{Referência à classe Departamento}
+\label{class_departamento}\index{Departamento@{Departamento}}
+
+
+declaração da classe \mbox{\hyperlink{class_departamento}{Departamento}}  
+
+
+
+
+{\ttfamily \#include $<$departamento.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_departamento_afecd08e514de4d6d63e1b7dede7d0cb2}{Departamento}} (int numero)
+\begin{DoxyCompactList}\small\item\em métodos públicos da classe \mbox{\hyperlink{class_departamento}{Departamento}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_departamento_a0876f22ddfa3aa1749b1cffb8dc8714e}{$\sim$\+Departamento}} ()
+\begin{DoxyCompactList}\small\item\em destrutor da classe \mbox{\hyperlink{class_departamento}{Departamento}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_departamento_ad26a1ce8ec1e3c10a4968b0f46a2b5c8}{copia\+\_\+dados}} (std\+::ifstream \&arq, int n)
+\begin{DoxyCompactList}\small\item\em método que copia os dados dos funcionarios do arquivo txt e armazena no vetor pessoal \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_departamento_a3817404d3afe7a9a4380aa20180b1745}{imprime\+\_\+funcionarios}} ()
+\begin{DoxyCompactList}\small\item\em método que imprime o conteudo do vetor pessoal \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_departamento_a7befddf84e750559142be63ba9b6d3c7}{imprime\+\_\+folha\+\_\+pagamento}} (string depto)
+\begin{DoxyCompactList}\small\item\em método que imprime os as informações dos funcionários de um determinado setor bem como a soma de seus salarios. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+declaração da classe \mbox{\hyperlink{class_departamento}{Departamento}} 
+
+Definido na linha \mbox{\hyperlink{departamento_8h_source_l00007}{7}} do ficheiro \mbox{\hyperlink{departamento_8h_source}{departamento.\+h}}.
+
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_departamento_afecd08e514de4d6d63e1b7dede7d0cb2}\label{class_departamento_afecd08e514de4d6d63e1b7dede7d0cb2}} 
+\index{Departamento@{Departamento}!Departamento@{Departamento}}
+\index{Departamento@{Departamento}!Departamento@{Departamento}}
+\doxysubsubsection{\texorpdfstring{Departamento()}{Departamento()}}
+{\footnotesize\ttfamily Departamento\+::\+Departamento (\begin{DoxyParamCaption}\item[{int}]{numero }\end{DoxyParamCaption})}
+
+
+
+métodos públicos da classe \mbox{\hyperlink{class_departamento}{Departamento}} 
+
+construtor da classe \mbox{\hyperlink{class_departamento}{Departamento}}
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em numero} & numero de funcionarios do departamento \\
+\hline
+\end{DoxyParams}
+
+
+Definido na linha \mbox{\hyperlink{departamento_8cpp_source_l00011}{11}} do ficheiro \mbox{\hyperlink{departamento_8cpp_source}{departamento.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ this-\/>numero\_funcionarios\ =\ numero;}
+\DoxyCodeLine{00014\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_departamento_a0876f22ddfa3aa1749b1cffb8dc8714e}\label{class_departamento_a0876f22ddfa3aa1749b1cffb8dc8714e}} 
+\index{Departamento@{Departamento}!````~Departamento@{$\sim$Departamento}}
+\index{````~Departamento@{$\sim$Departamento}!Departamento@{Departamento}}
+\doxysubsubsection{\texorpdfstring{$\sim$Departamento()}{~Departamento()}}
+{\footnotesize\ttfamily Departamento\+::$\sim$\+Departamento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destrutor da classe \mbox{\hyperlink{class_departamento}{Departamento}} 
+
+
+
+Definido na linha \mbox{\hyperlink{departamento_8cpp_source_l00016}{16}} do ficheiro \mbox{\hyperlink{departamento_8cpp_source}{departamento.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{delete}[]\ pessoal;}
+\DoxyCodeLine{00019\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{class_departamento_ad26a1ce8ec1e3c10a4968b0f46a2b5c8}\label{class_departamento_ad26a1ce8ec1e3c10a4968b0f46a2b5c8}} 
+\index{Departamento@{Departamento}!copia\_dados@{copia\_dados}}
+\index{copia\_dados@{copia\_dados}!Departamento@{Departamento}}
+\doxysubsubsection{\texorpdfstring{copia\_dados()}{copia\_dados()}}
+{\footnotesize\ttfamily void Departamento\+::copia\+\_\+dados (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{arq,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+método que copia os dados dos funcionarios do arquivo txt e armazena no vetor pessoal 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em arq} & controlador responsável por abrir e ler o arquivo txt \\
+\hline
+{\em n} & tamanho do vetor pessoal \\
+\hline
+\end{DoxyParams}
+novo vetor de \mbox{\hyperlink{class_funcionario}{Funcionario}}
+
+variável que vai passar por todas as linhas do arquivo
+
+controlador das posições do vetor pessoal
+
+se o arquivo tiver sido aberto será feita uma partição nas linhas do arquivo txt de modo que os dados serão separados por meio da tabulação e armazenados em cada posição do vetor info, depois será feita a chamada ao construtor \mbox{\hyperlink{class_funcionario}{Funcionario}} que receberá as posições do vetor e sera armazenado em pessoal.\+caso o arquivo não tenha sido aberto,será apresentada uma mensagem de erro
+
+Definido na linha \mbox{\hyperlink{departamento_8cpp_source_l00023}{23}} do ficheiro \mbox{\hyperlink{departamento_8cpp_source}{departamento.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ pessoal\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_funcionario}{Funcionario}}[n];}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{string}\ linha;}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ cont\ =\ 0;}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordflow}{if}\ (arq.is\_open())}
+\DoxyCodeLine{00038\ \ \ \ \ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (getline(arq,\ linha))}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ info[4];}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ iss(linha);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ palavra;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (iss\ >>\ palavra)}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ info[i]\ =\ palavra;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ pessoal[cont]\ =\ \mbox{\hyperlink{class_funcionario}{Funcionario}}(info[0],\ info[1],\ info[2],\ std::stod(info[3]));}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ cont++;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00057\ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Arquivo\ não\ foi\ aberto!"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ arq.close();}
+\DoxyCodeLine{00062\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_departamento_a7befddf84e750559142be63ba9b6d3c7}\label{class_departamento_a7befddf84e750559142be63ba9b6d3c7}} 
+\index{Departamento@{Departamento}!imprime\_folha\_pagamento@{imprime\_folha\_pagamento}}
+\index{imprime\_folha\_pagamento@{imprime\_folha\_pagamento}!Departamento@{Departamento}}
+\doxysubsubsection{\texorpdfstring{imprime\_folha\_pagamento()}{imprime\_folha\_pagamento()}}
+{\footnotesize\ttfamily void Departamento\+::imprime\+\_\+folha\+\_\+pagamento (\begin{DoxyParamCaption}\item[{string}]{depto }\end{DoxyParamCaption})}
+
+
+
+método que imprime os as informações dos funcionários de um determinado setor bem como a soma de seus salarios. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em depto} & filtro que indica qual será o departamento alvo da folha de pagamento \\
+\hline
+\end{DoxyParams}
+variável em que será armazenada a soma dos salários
+
+impressão das informações
+
+Definido na linha \mbox{\hyperlink{departamento_8cpp_source_l00075}{75}} do ficheiro \mbox{\hyperlink{departamento_8cpp_source}{departamento.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00076\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{double}\ total\ =\ 0;}
+\DoxyCodeLine{00079\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Folha\ de\ pagamento\ Depto\ "{}}\ <<\ depto\ <<\ std::endl;}
+\DoxyCodeLine{00080\ \ \ \ \ std::cout\ <<\ std::setw(10)\ <<\ \textcolor{stringliteral}{"{}Funcional"{}}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::setw(10)\ <<\ \textcolor{stringliteral}{"{}NOME"{}}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::setw(10)\ <<\ \textcolor{stringliteral}{"{}DEPTO"{}}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::setw(10)\ <<\ \textcolor{stringliteral}{"{}SALARIO"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ this-\/>numero\_funcionarios;\ i++)}
+\DoxyCodeLine{00087\ \ \ \ \ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (pessoal[i].GetDep()\ ==\ depto)}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ total\ +=\ pessoal[i].\mbox{\hyperlink{class_funcionario_a981c87ec20947c318522154bc09de9eb}{GetSalario}}();}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ std::setw(5)\ <<\ pessoal[i].\mbox{\hyperlink{class_funcionario_ad3995a2957195c818b04ecdfcd2ce8fb}{GetFunc}}()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::setw(13)\ <<\ pessoal[i].\mbox{\hyperlink{class_funcionario_a1f87ee8852d4bae6e80748bf018939ff}{GetNome}}()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::setw(3)\ <<\ pessoal[i].\mbox{\hyperlink{class_funcionario_ad44e6436c2e7493f1c9eea29684e45bf}{GetDep}}()\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)t"{}}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::setw(8)\ <<\ std::fixed\ <<\ std::setprecision(2)\ <<\ pessoal[i].\mbox{\hyperlink{class_funcionario_a981c87ec20947c318522154bc09de9eb}{GetSalario}}()}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}VALOR\ TOTAL:\ R\$\ "{}}\ <<\ std::fixed\ <<\ std::setprecision(2)\ <<\ total;}
+\DoxyCodeLine{00099\ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_departamento_a3817404d3afe7a9a4380aa20180b1745}\label{class_departamento_a3817404d3afe7a9a4380aa20180b1745}} 
+\index{Departamento@{Departamento}!imprime\_funcionarios@{imprime\_funcionarios}}
+\index{imprime\_funcionarios@{imprime\_funcionarios}!Departamento@{Departamento}}
+\doxysubsubsection{\texorpdfstring{imprime\_funcionarios()}{imprime\_funcionarios()}}
+{\footnotesize\ttfamily void Departamento\+::imprime\+\_\+funcionarios (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+método que imprime o conteudo do vetor pessoal 
+
+
+
+Definido na linha \mbox{\hyperlink{departamento_8cpp_source_l00064}{64}} do ficheiro \mbox{\hyperlink{departamento_8cpp_source}{departamento.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00065\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ this-\/>numero\_funcionarios;\ j++)}
+\DoxyCodeLine{00067\ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ std::cout\ <<\ pessoal[j].\mbox{\hyperlink{class_funcionario_a1f87ee8852d4bae6e80748bf018939ff}{GetNome}}()\ <<\ std::endl;}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \}}
+
+\end{DoxyCode}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+LISTA 2/\+Q4/header/departamento.\+h\item 
+LISTA 2/\+Q4/function/departamento.\+cpp\end{DoxyCompactItemize}

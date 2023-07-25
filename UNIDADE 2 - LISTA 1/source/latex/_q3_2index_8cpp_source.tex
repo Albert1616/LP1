@@ -1,0 +1,72 @@
+\hypertarget{_q3_2index_8cpp_source}{}\doxysection{index.\+cpp}
+\label{_q3_2index_8cpp_source}\index{LISTA 2/Q3/index.cpp@{LISTA 2/Q3/index.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00015}00015\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00017}00017\ \textcolor{keywordtype}{int}\ main()\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{string}\ alunos[8];}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordtype}{string}\ linha;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00025}00025\ \ \ \ \ std::ifstream\ arq;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00026}00026\ \ \ \ \ arq.open(\textcolor{stringliteral}{"{}alunos.txt"{}});}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{if}(arq.is\_open())\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(getline(arq,linha))\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ alunos[i]\ =\ linha;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00036}00036\ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Arquivo\ não\ aberto"{}};}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00041}00041\ \ \ \ \ arq.close();}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00044}00044\ \ \ \ \ \textcolor{keywordtype}{string}\ nomes[8];}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{double}\ medias[8];}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{string}\ situacao[8];}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i<8;i++)\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ soma\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cont\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ std::stringstream\ ss(alunos[i]);}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ aux;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(;getline(ss,aux,\textcolor{charliteral}{'\ '});)\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(cont\ >\ 0)\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ soma+=\ std::stod(aux);}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nomes[i]\ =\ aux;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ cont++;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ medias[i]\ =\ soma/3;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00068}00068\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i<8;i++)\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(medias[i]\ >=\ 7.0)\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ situacao[i]\ =\ \textcolor{stringliteral}{"{}Aprovado"{}};}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ situacao[i]\ =\ \textcolor{stringliteral}{"{}Reprovado"{}};}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00078}00078\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00079}00079\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00081}00081\ \ \ \ \ std::ofstream\ arq\_gravacao;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00082}00082\ \ \ \ \ arq\_gravacao.open(\textcolor{stringliteral}{"{}Resultado.txt"{}});}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i<8;i++)\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ arq\_gravacao\ <<\ nomes[i]\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ std::fixed\ <<\ std::setprecision(2)\ <<\ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ medias[i]\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ situacao[i]\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00087}00087\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i<8;i++)\{}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ std::cout\ <<\ nomes[i]\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ std::fixed\ <<\ std::setprecision(2)\ <<\ }
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ medias[i]\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ situacao[i]\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00091}00091\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00092}00092\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{_q3_2index_8cpp_source_l00093}00093\ \}}
+
+\end{DoxyCode}

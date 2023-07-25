@@ -1,0 +1,53 @@
+\hypertarget{_q2_2index_8cpp_source}{}\doxysection{index.\+cpp}
+\label{_q2_2index_8cpp_source}\index{LISTA 2/Q2/index.cpp@{LISTA 2/Q2/index.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00014}00014\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00016}00016\ \textcolor{keywordtype}{int}\ main()\{}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{int}\ num[10];}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00020}00020\ \ \ \ \ \textcolor{keywordtype}{int}\ soma\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00024}00024\ \ \ \ \ std::ifstream\ arq;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00026}00026\ \ \ \ \ arq.open(\textcolor{stringliteral}{"{}numeros.txt"{}});}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordtype}{string}\ linha;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{if}(arq.is\_open())\{}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(getline(arq,linha))\{}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ num[i]\ =\ stoi(linha);}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00038}00038\ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}O\ arquivo\ não\ foi\ aberto!"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00043}00043\ \ \ \ \ arq.close();}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{int}\ maior\ =\ num[0];}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{keywordtype}{int}\ menor\ =\ num[0];}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ i\ =\ 0;\ i<10;i++)\{}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(num[i]\ >\ maior)\{}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ maior\ =\ num[i];}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(num[i]\ <\ menor)\{}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ menor\ =\ num[i];}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ soma\ +=\ num[i];}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00060}00060\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00064}00064\ \ \ \ \ std::ofstream\ arq2;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00066}00066\ \ \ \ \ arq2.open(\textcolor{stringliteral}{"{}copia\_num.txt"{}});}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00067}00067\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00069}00069\ \ \ \ \ arq2\ <<\ \textcolor{stringliteral}{"{}Maior:\ "{}}\ <<\ maior\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00070}00070\ \ \ \ \ arq2\ <<\ \textcolor{stringliteral}{"{}Menor:\ "{}}\ <<\ menor\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00071}00071\ \ \ \ \ arq2\ <<\ \textcolor{stringliteral}{"{}Média:\ "{}}\ <<\ soma/10\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{_q2_2index_8cpp_source_l00074}00074\ \}}
+
+\end{DoxyCode}
